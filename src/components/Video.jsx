@@ -1,4 +1,4 @@
-import React from 'react';
+
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
@@ -6,14 +6,14 @@ gsap.registerPlugin(useGSAP);
 
 
 const Video = () => {
-let mousein=(e)=>{
+let mousein=()=>{
   gsap.to(".cursor",{
     scale: 5,
       background: "#80808078",
       opacity:1
   })
 }
-let mouseout=(e)=>{
+let mouseout=()=>{
   gsap.to('.cursor', {
     scale: 1,
     background: "#A9A9A9",
